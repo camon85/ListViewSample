@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:id="@+id/view_area">
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00aaaa"
+            android:transcriptMode="normal"
+            android:id="@+id/inputList"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_below="@id/view_area"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:weightSum="1">
+
+        <EditText
+                android:layout_width="0dp"
+                android:layout_weight="0.7"
+                android:layout_height="match_parent"
+                android:hint="입력하세요"
+                android:id="@+id/input"/>
+        <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="완료"
+                android:id="@+id/btnEnter"/>
+    </LinearLayout>
+
+</RelativeLayout>
